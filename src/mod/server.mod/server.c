@@ -132,6 +132,10 @@ static int invite_notify = 0;
 static int message_tags = 0;
 
 static char cap_request[CAPMAX - 9];
+static char webirc_password[63];
+static char webirc_gateway[11];
+static char webirc_host[64];
+static char webirc_ip[40];
 static int sasl_mechanism = 0;
 static char sasl_username[NICKMAX + 1];
 static char sasl_password[81];
@@ -1597,6 +1601,10 @@ static tcl_strings my_tcl_strings[] = {
   {"stackable-commands",  stackablecmds,  510,               0},
   {"stackable2-commands", stackable2cmds, 510,               0},
   {"cap-request",         cap_request,    CAPMAX - 9,        0},
+  {"webirc-password",     webirc_password,32                 0},
+  {"webirc-gateway",      webirc_gateway, 10,                0},
+  {"webirc-hostname",     webirc_host,    63,                0},
+  {"webirc-ip",           webirc_ip,      39,                0},
   {"sasl-username",       sasl_username,  NICKMAX,           0},
   {"sasl-password",       sasl_password,  80,                0},
   {"sasl-ecdsa-key",      sasl_ecdsa_key, 120,               0},
