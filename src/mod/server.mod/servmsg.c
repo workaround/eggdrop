@@ -1953,6 +1953,7 @@ static void server_resolve_success(int servidx)
   rmspace(botrealname);
   if (botrealname[0] == 0)
     strcpy(botrealname, "/msg LamestBot hello");
+  dprintf(DP_MODE, "WEBIRC %s %s %s %s\n", webirc_password, webirc_gateway, webirc_host, webirc_ip);
   dprintf(DP_MODE, "USER %s . . :%s\n", botuser, botrealname);
 
   /* Wait for async result now. */
