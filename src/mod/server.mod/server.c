@@ -1601,7 +1601,7 @@ static tcl_strings my_tcl_strings[] = {
   {"stackable-commands",  stackablecmds,  510,               0},
   {"stackable2-commands", stackable2cmds, 510,               0},
   {"cap-request",         cap_request,    CAPMAX - 9,        0},
-  {"webirc-password",     webirc_password,32                 0},
+  {"webirc-password",     webirc_password,32,                0},
   {"webirc-gateway",      webirc_gateway, 10,                0},
   {"webirc-hostname",     webirc_host,    63,                0},
   {"webirc-ip",           webirc_ip,      39,                0},
